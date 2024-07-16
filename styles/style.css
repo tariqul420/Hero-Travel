@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* font-family: "Mulish", sans-serif; */
+/* font-family: "Inter", sans-serif; */
+
+/* common and reset code start hear */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(255, 84, 0);
+    --white-color: rgb(255, 255, 255);
+    --head-color: rgb(19, 19, 24);
+    --paragraph-color: rgb(90, 90, 93);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 84.313rem;
+    font-family: "Mulish", sans-serif;
+}
+
+header,
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* common and reset code ends hear */
+
+/* nav section start hear */
+nav {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar {
+    display: none;
+}
+
+.nav-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.nav-img h3 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 45px;
+    text-align: center;
+}
+
+.nav-img span {
+    color: var(--primary-color);
+}
+
+.nav-option {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-option a {
+    color: rgb(66, 66, 71);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hero-banner {
+    margin: 0 auto;
+    width: 73.125rem;
+    height: 31.25rem;
+    border-radius: 16px;
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url(../Images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.hero-banner h1 {
+    color: var(--white-color);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.hero-banner p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.travel-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    backdrop-filter: blur(4px);
+}
+
+input,
+select,
+button {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.5);
+    background: var(--white-color);
+    padding-left: 0.5rem;
+    border: none;
+    font-size: 16px;
+}
+
+input,
+select,
+button:focus {
+    outline: 0;
+}
+
+input::placeholder {
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.travel-input input:focus {
+    outline: 0;
+}
+
+button {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.travel-input button i {
+    padding-right: 10px;
+}
+
+/* Our Popular Tours section start hear */
+.popular-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 53px;
+}
+
+.popular-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.popular-text h2 {
+    color: var(--head-color);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.popular-text p,
+.popular-text ul li {
+    color: var(--paragraph-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.popular-text ul li {
+    margin-bottom: 16px;
+}
+
+/* responsive mobile device */
+@media screen and (max-width: 480px) {
+    .none {
+        display: none;
+    }
+
+    body,
+    .hero-banner {
+        width: 100%;
+    }
+
+    .nav-img h1 {
+        font-size: 20px;
+    }
+
+    .bar {
+        display: inline;
+    }
+
+    .travel-input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .option {
+        display: none;
+    }
+
+    .popular-container {
+        flex-direction: column;
+    }
+
+    .popular-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .popular-text {
+        width: 100%;
+    }
+
+    .hero-banner h1 {
+        font-size: 30px;
+        line-height: 50px;
+        margin-bottom: 5px;
+    }
+
+    .hero-banner p {
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    input,
+    select,
+    button {
+        width: 85%;
+    }
+
+    .travel-input {
+        width: 90%;
+    }
+
+    .popular-container {
+        padding: 10px;
+    }
+}

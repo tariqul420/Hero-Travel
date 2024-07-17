@@ -387,9 +387,11 @@ button {
     width: 150px;
 }
 
-.card02 {
-    display: flex;
-    flex-direction: row-reverse;
+.card002 {
+    transform: rotateY(180deg);
+}
+.card02{
+    transform: rotateY(180deg);
 }
 
 /* responsive mobile device */
